@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[affil-it]{authblk}
+\usepackage{cite}
+
+\usepackage[utf8]{inputenc}
+
+\title{Informing projections of extreme precipitation through spatial clustering}
+\author{Benjamin M. Sanderson}
+\affil{National Center for Atmospheric Research,\\ Boulder CO, USA}
+
+\author{Cameron Wobus}
+\affil{Abt Associates, Boulder CO, USA}
+\date{January 2018}
+
+\begin{document}
+
+\maketitle
+\section{Abstract}
+The use of climate model simulations to investigate the changing risk of extreme precipitation under climate change is hampered by the rarity of such events.  The resolution and ensemble size necessary to sample the changing risk of events which might compromise infrastructure precludes the direct use of climate simulations to incorporate into a risk analysis.  To address this, we propose a spatial clustering approach which utilizes information from self-similar regions to form an estimate of the evolving extreme value characteristics for precipitation.  We apply this approach to the contiguous United States, considering the expected precipitation behaviour at a number of global mean temperature thresholds.  We find that in almost all regions, there is an expectation that the most extreme precipitation events of the recent past will become more frequent in a warmer climate, but there is variation between regions.  While some regions (North Dakota, North Carolina) show relatively muted changes in extreme precipitation frequency, the largest changes are seen in the US North East and in California, where present day 1000 year events are simulated to occur approximately every 50-100 years under 4 degrees Celsius of global average warming.
+
+\section{Introduction}
+Non-stationary extreme precipitation characteristics are one of the most acute risks which societies could potentially face under climate change.  Catastrophic damages can be inflicted if precipitation events occur which are more intense than the general design specifications of infrastructure.  As such, making projections of extreme precipitation in a warming climate is a primary challenge when making assessments of changing climate risk, and ultimately advising stakeholders on how to revise infrastructure, planning and building codes for a warmer world.
+
+Assessing this information from the presently available archive of climate simulations is, however, non-trivial.  Basic theory has long predicted \cite{trenberth2003changing} that the most extreme precipitation events are governed by simple thermodynamic principles: warmer air is capable of holding more moisture, and thus events which significantly deplete the atmospheric column of moisture will become, on average, more extreme in a warmer climate.  However, when aggregated globally, it becomes evident that different models available in the Coupled Model Intercomparison Project, version 5 (CMIP5) archive exhibit a variety of responses of extreme precipitation to warming \cite{pendergrass2015does}.  Whereas some models show a gradual shift of the upper tail of the global precipitation distribution, others exhibit an `extreme mode': a non-linear increase in gridpoint-scale extreme rainfall events in a warming world.  As such, a single model is unable to capture the diversity of possible changes in future behavior and any risk analysis needs to consider projections from all models which have not yet been ruled out.
+
+To date, our most comprehensive archive of structural diversity in climate simulations is the CMIP5 archive.  However, there are various limitations to this data which prevent its direct use for informing extreme precipitation risk.  Firstly, by definition, extreme precipitation events are rare - building standards often use a Probable Maximum Precipitation value corresponding to 100 year events \cite{kunkel2013probable}, and insurance companies provide coverage for events with return periods of up to 1000 years \cite{kron2009flood}.  The CMIP5 archive provides only a small number simulations for each model configuration, and so there are not enough simulated years to directly estimate extreme value characteristics at the 1000 year return level.
+
+A proposed solution to this issue has been spatial aggregation.  When aggregated at a global \cite{pendergrass2015does} or continental \cite{fischer2013robust} level, precipitation distributions are well sampled enough in the tail to resolve the changing nature of extreme precipitation.  However, although such scales can be informative for understanding the general characteristics of rainfall in different models, they are not directly useful for planning and adaptation at a regional scale.  Furthermore, the physical interpretation of such distributions is complicated by the fact that the regions cover a wide range of precipitation regimes, and so the events represented are not drawn from a single distribution, rendering a traditional extreme value analysis inappropriate.
+
+One approach to resolving this issue is to use spatial clustering to identify regions which broadly share precipitation characteristics, such that the precipitation in the points within the cluster can be approximated to be drawn from the same distribution. Clustering algorithms have been applied to precipitation data before  \cite{ong1995application,hargrove1998new,yavuz2012spatial}, with some qualitative success in identifying self-similar precipitation regimes within a wider domain.  In this study, we build on such approaches to use spatially clustered precipitation data to provide information on changing precipitation risk on a scale which might be useful for adaptation.
+
+\section{Methods}
+
+We begin 
+
+
+\bibliography{precip}
+\bibliographystyle{plain}
+
+\end{document}
